@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Rock Paper Scissors</h1>
+            <p class="text">An online rock paper scissors game.</p>
+        </div>
+        
+        <div class="instructions">
+            <h3 class="title">Instructions</h3>
+            <p class="text">1. To play this game click on the play button.</p>
+            <p class="text">2. Now select one of the items by clicking on it.</p>
+            <p class="text">3. If you win one point will be added to your score else bot's point increases by one</p>
+            <p class="text">4. Click on restart to play again.</p>
+            <p class="text">5. Click on exit if you want to exit game.</p>
+
+            <div class="button">
+                <button class="btn play-btn">Play</button>
+            </div>
+        </div>
+
+
+        <div class="game hide">
+            <div class="scores">
+                <div class="score" id="user-score">
+                    Your Score: <span>0</span>
+                </div>
+                <div class="score" id="bot-score">
+                    Bot Score: <span>0</span>
+                </div>
+            </div>
+
+            <div class="item-btns">
+                <button class="btn item-btn">Rock</button>
+                <button class="btn item-btn">Paper</button>
+                <button class="btn item-btn">Scissors</button>
+            </div>
+
+            <div class="game-board">
+
+            </div>
+
+            <div class="button">
+                <button class="btn restart-btn" disabled>Restart</button>
+                <button class="btn exit-btn">Exit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    background-color: #2f0c43;
+    color: #EEEFFE;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.1rem 1rem;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: 'Peralta', cursive;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.header .text {
+    text-align: center;
+}
+
+.instructions {
+    margin-bottom: 1.5rem;
+}
+
+.instructions .button, .game .button {
+    display: flex;
+    justify-content: center;
+}
+
+.instructions .button .btn {
+    display: block;
+}
+
+.game {
+    margin-bottom: 1.5rem;
+}
+
+.game .button .btn {
+    display: inline-block;
+}
+
+.game .button .btn:last-child {
+    margin-left: 0.5rem;
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 1rem;
+}
+
+#bot-score {
+    text-align: right;
+}
+
+.item-btns {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.item-btns .btn:hover {
+    opacity: 0.7;
+}
+
+.game-board div {
+    margin-bottom: 2rem;
+}
+
+.result {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+@media only screen and (min-width: 651px) {
+    .game-board {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .game-board div {
+        margin-bottom: 0;
+    }
+
+    .result {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
